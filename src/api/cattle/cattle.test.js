@@ -37,6 +37,10 @@ test('/POST /cattle creates a new data', async (assert) => {
 			age: 6,
 			birthdate: '2019-06-11',
 			description: 'Vaca 4',
+			race: 'ww',
+			color: 'ww',
+			sex: 'wwww',
+			earringNumber: 'ww',
 		},
 		url: '/cattle',
 		headers: { authorization: `Bearer ${token}` },
@@ -49,7 +53,7 @@ test('/POST /cattle creates a new data', async (assert) => {
 
 	const actual = statusCode;
 	const expected = 201;
-	const message = 'POST /cattle should return a status code of 400';
+	const message = 'POST /cattle should return a status code of 201';
 
 	assert.equal(actual, expected, message);
 

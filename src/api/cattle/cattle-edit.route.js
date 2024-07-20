@@ -25,6 +25,10 @@ const route = {
 					.required(),
 				birthdate: Joi.string().required(),
 				description: Joi.string(),
+				race: Joi.string(),
+				color: Joi.string(),
+				sex: Joi.string(),
+				earringNumber: Joi.string(),
 			}),
 			params: Joi.object({
 				id: Joi.number().required(),

@@ -26,6 +26,18 @@ class Cattle extends baseModel {
 				description: {
 					type: 'string',
 				},
+				race: {
+					type: 'string',
+				},
+				color: {
+					type: 'string',
+				},
+				sex: {
+					type: 'string',
+				},
+				earringNumber: {
+					type: 'string',
+				},
 				...defaultProperties,
 			},
 		};
@@ -39,7 +51,7 @@ class Cattle extends baseModel {
 	}
 
 	static defaultColumns() {
-		return ['id', 'name', 'age', 'birthdate', 'description'];
+		return ['id', 'name', 'age', 'birthdate', 'description', 'race', 'color', 'sex', 'earringNumber'];
 	}
 
 	static getById(id) {

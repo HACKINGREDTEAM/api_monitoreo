@@ -1,0 +1,15 @@
+{
+	"extends": "airbnb-base",
+	"parserOptions": {
+	  "ecmaVersion": 2020,
+	  "sourceType": "script"
+	},
+	"rules": {
+	  "no-tabs": 0,
+	  "indent": ["error", "tab"],
+	  "strict": ["error", "global"],
+	  "no-new-func": "off",
+	  "no-undef": "error"
+	}
+  }
+  

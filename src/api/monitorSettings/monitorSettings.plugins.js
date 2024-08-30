@@ -5,6 +5,7 @@ const monitorSettingsDeleteRoute = require('./monitorSettings-delete.route');
 const monitorSettingsDetailRoute = require('./monitorSettings-detail.route');
 const monitorSettingsListRoute = require('./monitorSettings-list.route');
 const monitorSettingsEditRoute = require('./monitorSettings-edit.route');
+const monitorSettingsEditFlagRoute = require('./monitorSettings-edit-flag.route');
 
 function register(server) {
 	server.route(monitorSettingsCreateRoute);
@@ -12,6 +13,7 @@ function register(server) {
 	server.route(monitorSettingsDetailRoute);
 	server.route(monitorSettingsListRoute);
 	server.route(monitorSettingsEditRoute);
+    server.route(monitorSettingsEditFlagRoute);
 }
 
 const plugin = {
